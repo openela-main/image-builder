@@ -17,7 +17,7 @@ OSTree commits. Uses osbuild under the hood.
 }
 
 Name:           image-builder
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        An image building executable using osbuild
 ExcludeArch:    i686
 
@@ -238,6 +238,11 @@ cd $PWD/_build/src/%{goipath}
 %{_bindir}/image-builder
 
 %changelog
+* Tue Jan 06 2026 imagebuilder-bot <imagebuilder-bots+imagebuilder-bot@redhat.com> - 31-2
+- Rebuilt to fix: 
+  - CVE-2025-58183
+  - RHEL-125699
+
 * Tue Aug 19 2025 imagebuilder-bot <imagebuilder-bots+imagebuilder-bot@redhat.com> - 31-1
 - New upstream release
 

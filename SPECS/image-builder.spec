@@ -17,7 +17,7 @@ OSTree commits. Uses osbuild under the hood.
 }
 
 Name:           image-builder
-Release:        1%{?dist}
+Release:        3%{?dist}
 Summary:        An image building executable using osbuild
 ExcludeArch:    i686
 
@@ -28,6 +28,8 @@ License:        Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND CC-BY-SA-4.0 AN
 
 URL:            %{gourl}
 Source0:        https://github.com/osbuild/image-builder-cli/releases/download/v%{version}/image-builder-cli-%{version}.tar.gz
+
+Patch0: 0001-go.mod-update-osbuild-images-to-v0.178.2.patch
 
 
 BuildRequires:  %{?go_compiler:compiler(go-compiler)}%{!?go_compiler:golang}
@@ -238,6 +240,14 @@ cd $PWD/_build/src/%{goipath}
 %{_bindir}/image-builder
 
 %changelog
+* Tue Jan 06 2026 imagebuilder-bot <imagebuilder-bots+imagebuilder-bot@redhat.com> - 31-3
+- Rebuilt to fix: 
+  - CVE-2025-58183
+  - RHEL-125634
+
+* Fri Dec 19 2025 Achilleas Koutsou <achilleas@redhat.com> - 31-2
+- Add Red Hat v4 key for RHEL 10.1 RPMs
+
 * Tue Aug 19 2025 imagebuilder-bot <imagebuilder-bots+imagebuilder-bot@redhat.com> - 31-1
 - New upstream release
 

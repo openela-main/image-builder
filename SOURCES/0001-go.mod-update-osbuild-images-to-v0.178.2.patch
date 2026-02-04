@@ -1,0 +1,42 @@
+From 6c85138d70f2debe481dfff9fdaeeefa17cd87f4 Mon Sep 17 00:00:00 2001
+From: Achilleas Koutsou <achilleas@koutsou.net>
+Date: Fri, 19 Dec 2025 19:05:41 +0100
+Subject: [PATCH] go.mod: update osbuild/images to v0.178.2
+
+Adds the new RHEL 10.1 GPG key to the repository config.
+---
+ go.mod | 2 +-
+ go.sum | 4 ++--
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/go.mod b/go.mod
+index e044715..244a138 100644
+--- a/go.mod
++++ b/go.mod
+@@ -12,7 +12,7 @@ require (
+ 	github.com/gobwas/glob v0.2.3
+ 	github.com/mattn/go-isatty v0.0.20
+ 	github.com/osbuild/blueprint v1.13.0
+-	github.com/osbuild/images v0.177.0
++	github.com/osbuild/images v0.178.2
+ 	github.com/spf13/cobra v1.9.1
+ 	github.com/stretchr/testify v1.10.0
+ 	golang.org/x/sys v0.35.0
+diff --git a/go.sum b/go.sum
+index ac275e4..b650c0c 100644
+--- a/go.sum
++++ b/go.sum
+@@ -243,8 +243,8 @@ github.com/opencontainers/selinux v1.12.0 h1:6n5JV4Cf+4y0KNXW48TLj5DwfXpvWlxXplU
+ github.com/opencontainers/selinux v1.12.0/go.mod h1:BTPX+bjVbWGXw7ZZWUbdENt8w0htPSrlgOOysQaU62U=
+ github.com/osbuild/blueprint v1.13.0 h1:blo22+S2ZX5bBmjGcRveoTUrV4Ms7kLfKyb32WyuymA=
+ github.com/osbuild/blueprint v1.13.0/go.mod h1:HPlJzkEl7q5g8hzaGksUk7ifFAy9QFw9LmzhuFOAVm4=
+-github.com/osbuild/images v0.177.0 h1:oubjOaYmrI0STPnJmtxuDPNRQmV2nR9JI0g42u+yShw=
+-github.com/osbuild/images v0.177.0/go.mod h1:7CfDwGb8YA4erIzvMnqJysVpSu52i6l/f3h82usGPTg=
++github.com/osbuild/images v0.178.2 h1:/DWjhbM2iMXmJX52UABm0ZdGshCgDoSGLVcVlR7thOw=
++github.com/osbuild/images v0.178.2/go.mod h1:7CfDwGb8YA4erIzvMnqJysVpSu52i6l/f3h82usGPTg=
+ github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
+ github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
+ github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
+-- 
+2.52.0
+

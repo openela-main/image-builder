@@ -7,7 +7,7 @@
 
 %global goipath         github.com/osbuild/image-builder-cli
 
-Version:        51
+Version:        52.1
 
 %gometa
 
@@ -265,6 +265,9 @@ cd $PWD/_build/src/%{goipath}
 %ghost %attr(0755, root, root) %dir /var/cache/image-builder
 
 %changelog
+* Tue Jun 6 2026 sraymaek <sraymaek@redhat.com - 52.1-1
+- New upstream release
+
 * Thu Feb 19 2026 imagebuilder-bot <imagebuilder-bots+imagebuilder-bot@redhat.com> - 51-1
 - New upstream release
 

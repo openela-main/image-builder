@@ -17,7 +17,7 @@ OSTree commits. Uses osbuild under the hood.
 }
 
 Name:           image-builder
-Release:        1%{?dist}
+Release:        1%{?dist}.2
 Summary:        An image building executable using osbuild
 ExcludeArch:    i686
 
@@ -265,6 +265,13 @@ cd $PWD/_build/src/%{goipath}
 %ghost %attr(0755, root, root) %dir /var/cache/image-builder
 
 %changelog
+* Mon Aug 31 2026 RHEL Packaging Agent <redhat-ymir-agent@redhat.com> - 52.1-1.2
+- Rebuild for updated golang
+
+* Wed Jul 08 2026 RHEL Packaging Agent <redhat-ymir-agent@redhat.com> - 52.1-1.1
+- Rebuild for updated golang
+- Resolves: RHEL-175286, RHEL-187127, RHEL-177125
+
 * Tue Jun 6 2026 sraymaek <sraymaek@redhat.com - 52.1-1
 - New upstream release
 
